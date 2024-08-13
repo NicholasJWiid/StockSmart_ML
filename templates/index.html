@@ -398,7 +398,8 @@
 					.dropdown-container {
 						margin-right: 20px; /* Space between dropdowns and chart */
 						display: flex;
-						flex-direction: column;
+						flex-direction: column; /* Or 'row', depending on your layout */
+						width: 200px; /* Adjust this value to your desired width */
 					}
 					.stock-info {
 						margin-bottom: 10px;
@@ -424,7 +425,7 @@
 				<div class="container">
 					<div class="dropdown-container">
 						<div class="stock-info">
-							<h2 id="stock-name"><b>Name: </b></h2> 
+							<h4 id="stock-name"><b>Name: </b></h4> 
 							<p id="stock-headquarters">Headquarters: </p>
 						</div>
 						<div>

@@ -90,7 +90,7 @@ Finally, a model optimization technique was run using the keras tuner. This tech
 ### Unsupervised learning - Cluster results
 The point of this exercise was simply to see if distinct clusters were identifiable based on the stock performance data. The “Stocks by Cluster - Annual Return vs Annual Variance” chart below shows the results of the stock clustering exercise. Each color represents a different cluster.
 
-https://github.com/deleyeem/StockSmart_ML/blob/main/images/Stocks%20by%20Cluster.png
+![Stock Cluster](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Stocks%20by%20Cluster.png)
 
 The chart shows the stocks separated into five relatively distinct clusters based on the variables compared:
 Red: Low return, high variance.

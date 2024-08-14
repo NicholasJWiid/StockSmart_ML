@@ -133,15 +133,15 @@ The Random Forest model showed slightly lower True Positives and higher True Neg
 
 ![Random Forest Confusion Matrix](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20RandomForest%20-%20Confusion%20Matrix.png)
 
-From a feature importance perspective, the chart below shows the feature importance contributions for the top 20 features, ranked by their contribution.
+From a feature importance perspective, the chart below shows the Random Forest feature importance contributions for the top 20 features, ranked by their contribution.
 
 ![Random Forest Feature Importance](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20RandomForest%20-%20Features%20Importance.png)
 
 All the economic factors show the highest importance (between 3-4%), likely due to their equal effect of every stock. The rest of the top twenty features are made up of various values for Tenure, Salary and Sector, all with relatively low influence in their individual capacity (1-1.5%). This highlights the lack of influence of one or two particular factors (for example CEO demographics) on stock performance in this particular analysis.  
 
-![Extra Trees Feature Importance](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20ExtraTrees%20Feature%20Importance.png)
+Looking at the Extra Trees feature importance (chart below), we do see CEO gender and CEO Transition appearing in the top 20 influential features, however, they both only have around 1% influence on the model on their own.
 
-Looking at the Extra Trees feature importance, we do see CEO gender and CEO Transition appearing in the top 20 influential features, however, they both only have around 1% influence on the model on their own.
+![Extra Trees Feature Importance](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20ExtraTrees%20Feature%20Importance.png)
 
 
 ### Supervised learning - Neural Network Results

@@ -27,13 +27,10 @@ We retrieved a list of the current S&P 500 companies from an online search.
 
 From here, we manually researched information related to CEO compensation, CEO gender, CEO transition, and CEO tenure. This research was conducted via Google searches with the help of ChatGPT. We also hired a friendly Bengladeshi research team to help with a small portion of this work.
 
-CEO salary information was found on the AFL-CIO’s “Highest Paid CEOs” page.
-
-Data points related to CPI, GDP, Employment Rates, and Interest Rates were found on various government websites.
-
-Definitions for measures like CAGR were also found via web searches.
-
-Historical stock data was retrieved from YFinance (Yahoo Finance’s API).
+* CEO salary information was found on the AFL-CIO’s “Highest Paid CEOs” page.
+* Data points related to CPI, GDP, Employment Rates, and Interest Rates were found on various government websites.
+* Definitions for measures like CAGR were also found via web searches.
+* Historical stock data was retrieved from YFinance (Yahoo Finance’s API).
 
 
 ## Financial Definitions

@@ -81,7 +81,8 @@ For Classification Unsupervised learning, our goal was to test different models 
 
 ### Supervised Learning - Neural Network
 For Neural Network modeling our goal was to test different configurations with more and less features to maximize model accuracy. We created 6 models, each with a different number of layers and nodes, and multiple tests for each model choosing either 50, 100 or 200 epochs. Model test schedule shown below.
-ADD Neural Network - Model Test Details IMG
+
+![Neural Network - Model Test Details](https://github.com/user-attachments/assets/42f693d8-1d43-41bb-85be-153f2574b96f)
 
 Finally, a model optimization technique was run using the keras tuner. This technique is designed to find the best model, testing all possible model configurations within the given tuner parameters. Parameters chosen for this optimization process were based on the model tests conducted previously. The following tuner parameters were fed into the optimizer: Any number of layers between 3 and 5; Any number of nodes between 10 and 128; A maximum epochs 50; An activation function of either ‘relu’ or ‘tanh’.
 
@@ -174,17 +175,17 @@ Overall, both the classifier and the neural network models appear to benefit fro
 We would like to build our model to use more robust factors. Examples of additional potentially useful factors include:
 
 Financial Factors
-* Revenue and revenue growth and related metrics like price to earnings
-* Debt-to-Equity Ratio
-* Cash Flow
+  * Revenue and revenue growth and related metrics like price to earnings
+  * Debt-to-Equity Ratio
+  * Cash Flow
 Operational Factors
-* CapEx
-* R&D Expenditure
-* Revenue per employee
+  * CapEx
+  * R&D Expenditure
+  * Revenue per employee
 Market Factors
-* Market Capitalization
-* Trading Volume
+  * Market Capitalization
+  * Trading Volume
 Qualitative Factors
-* Management Team
-* Brand Strength
+  * Management Team
+  * Brand Strength
 

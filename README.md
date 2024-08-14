@@ -40,10 +40,10 @@ Historical stock data was retrieved from YFinance (Yahoo Finance’s API).
 The S&P 500 is a market-capitalization-weighted index of 500 leading publicly traded companies in the United States. Standard and Poor’s, a credit rating agency, launched the index in 1957. Since its inception, the S&P 500 has served as an important benchmark through which to measure the performance of the American equity market and the American economy at large.
 
 Eligibility Criteria:
-** Must be a U.S.-domiciled company
-** Must have a primary listing on one of the major U.S. exchanges
-** Must be a corporation issuing equity, mortgage REITs, or common stock
-** Must have a market ≥ $18B
+- ** Must be a U.S.-domiciled company
+- ** Must have a primary listing on one of the major U.S. exchanges
+- ** Must be a corporation issuing equity, mortgage REITs, or common stock
+- ** Must have a market ≥ $18B
 
 The S&P 500 is reconstituted annually, after market close of the third Friday in June.
 
@@ -67,11 +67,11 @@ In unsupervised learning our goal was to review clustering of stock performance 
 For Supervised learning we chose to use both classification and neural network algorithms to test the different approaches.
 
 
-#### Data preparation
+#### Data Preparation
 Data was prepared in the same way for both approaches. Monthly data was extracted for each stock and each year from 2015 to 2023. Year values were then computed for each year (year open, year high, year low, year close, and year volume), after which the CAGR was calculated for each stock. The same variables were then calculated for the S&P 500 index for each year, including the S&P 500 CAGR and the datasets were merged. A new column was then added to the dataset showing the “outcome” of the CAGR comparison, indicating if the stock CAGR for any given year had outperformed the S&P 500 CAGR (1 for yes and 0 for no). This was the target of our Machine Learning testing. External economic factors (Interest Rate, CPI, Unemployment Rate and GDP Growth Rate) and company specific factors (Sector, Sub-Sector, Year Founded, CEO Gender, CEO Transition, CEO Tenure, Headquarters US state or other Country, and CEO Salary Range) were then merged for each year of the data for each stock/company. Finally, all stock price and CAGR columns were dropped from the dataframe (Year_Open, Year_High, Year_Low, Year_Close, Year_Volume, Stock_CAGR, SP500_Open, SP500_High, SP500_Low, SP500_Close, SP500_CAGR) to create the final machine learning dataframe.
 
 
-#### Data preprocessing
+#### Data Preprocessing
 Data was then preprocessed to be ready for the classifier and neural network models. Categorical variables were converted to numeric data using the pandas .get_dummies() function. The data was split into features (company and economic factors) and the target array (Outcome of the CAGR comparison), and further split into training data and testing data, with a rough ratio of 3 to 1 training to testing. Training and testing features were then scaled using the scikit-learn preprocessing function StandardScaler().
 
 
@@ -109,26 +109,26 @@ At a high level it appears that companies run by women have in general lower ann
 
 ### Supervised learning - Classification Results
 The accuracy scores of the four classifier models run are as follows:
-**Bagging Classifier: 0.68
-**Random Forest: 0.66
-**Extra Trees: 0.65
-**KNN: 0.52
+- **Bagging Classifier: 0.68
+- **Random Forest: 0.66
+- **Extra Trees: 0.65
+- **KNN: 0.52
 
 From the perspective of the Confusion Matrix, the goal in this particular case is firstly to maximize the number of True Positives, and secondly to maximize the number of True Negatives. A successful model would show very few False Positives and False Negatives, which would mean that the model is good at using company factors to determine stock performance. True positives would be priority, because this would then become a major determinant in choosing to invest in that particular stock, which according to a highly accurate model would be correctly predicting exceptional stocks. True negatives in the results are obviously less desirable because the goal is to find strong investment opportunities, however, this knowledge is still useful as it would indicate what not to invest in.
 
 The most accurate model in our analysis was the Bagging classifier, showing:
-**376 True Negatives
-**353 True Positives
-**187 False Positives
-**176 False Negatives
+- **376 True Negatives
+- **353 True Positives
+- **187 False Positives
+- **176 False Negatives
 
 ![Classification Confusion Matrix](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20Bagging%20Classifier%20confusin%20matrix.png)
 
 The second most accurate model in our analysis was the Random Forest, showing:
-**380 True Negatives
-**341 True Positives
-**183 False Positives
-**183 False Negatives
+- **380 True Negatives
+- **341 True Positives
+- **183 False Positives
+- **183 False Negatives
 
 The Random Forest model showed slightly lower True Positives and higher True Negatives, which is why it achieved a lower overall accuracy. There is clearly plenty of room for improvement on the classifier model, with the aim to reduce the number of False Negatives and False Positives.
 ![Random Forest Confusion Matrix](https://github.com/deleyeem/StockSmart_ML/blob/main/images/Classification%20-%20RandomForest%20-%20Confusion%20Matrix.png)
@@ -168,17 +168,17 @@ Overall, both the classifier and the neural network models appear to benefit fro
 We would like to build our model to use more robust factors. Examples of additional potentially useful factors include:
 
 Financial Factors
-**Revenue and revenue growth and related metrics like price to earnings
-**Debt-to-Equity Ratio
-**Cash Flow
-**Operational Factors
-**CapEx
-**R&D Expenditure
-**Revenue per employee
-**Market Factors
-**Market Capitalization
-**rading Volume
-**Qualitative Factors
-**Management Team
-**Brand Strength
+- **Revenue and revenue growth and related metrics like price to earnings
+- **Debt-to-Equity Ratio
+- **Cash Flow
+- **Operational Factors
+- **CapEx
+- **R&D Expenditure
+- **Revenue per employee
+- **Market Factors
+- **Market Capitalization
+- **rading Volume
+- **Qualitative Factors
+- **Management Team
+- **Brand Strength
 

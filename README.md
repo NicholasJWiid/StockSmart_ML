@@ -40,7 +40,7 @@ Historical stock data was retrieved from YFinance (Yahoo Finance’s API).
 The S&P 500 is a market-capitalization-weighted index of 500 leading publicly traded companies in the United States. Standard and Poor’s, a credit rating agency, launched the index in 1957. Since its inception, the S&P 500 has served as an important benchmark through which to measure the performance of the American equity market and the American economy at large.
 
 Eligibility Criteria:
-* Must be a U.S.-domiciled company
+* Must be a US-domiciled company
 * Must have a primary listing on one of the major U.S. exchanges
 * Must be a corporation issuing equity, mortgage REITs, or common stock
 * Must have a market ≥ $18B

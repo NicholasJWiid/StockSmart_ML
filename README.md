@@ -178,13 +178,16 @@ Financial Factors
   * Revenue and revenue growth and related metrics like price to earnings
   * Debt-to-Equity Ratio
   * Cash Flow
+
 Operational Factors
   * CapEx
   * R&D Expenditure
   * Revenue per employee
+
 Market Factors
   * Market Capitalization
   * Trading Volume
+
 Qualitative Factors
   * Management Team
   * Brand Strength
